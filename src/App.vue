@@ -2,7 +2,7 @@
     <div class="container text-center  mt-5 mb-5">
     <h1 class="mt-5 fw-bolder text-success "> Student's Database </h1>
      <div class="table-responsive my-5">
-      <!-- The table component -->
+
        <Table :fields='fields' :studentData ='studentData'></Table>
      </div>
 
@@ -10,7 +10,7 @@
 </template>
 <script>
 import Table from './components/Table.vue'
-//importing bootstrap 5
+
 import "bootstrap/dist/css/bootstrap.min.css";
 export default {
   name: 'App',
@@ -18,7 +18,7 @@ export default {
     Table
   },
   setup(){
-    //An array of values for the data
+
        const studentData = [
       {ID:"01", Name: "Abiola Esther", Course:"Computer Science", Gender:"Female", Age:"17"},
      {ID:"02", Name: "Robert V. Kratz", Course:"Philosophy", Gender:"Male", Age:'19'},
